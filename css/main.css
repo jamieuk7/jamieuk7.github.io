@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 body {
 	background-image: url('../images/bg.jpg');
 	background-size: cover;
@@ -40,6 +41,7 @@ body {
 }
 .nav-title {
 	font-size: 60px;
+	font-family: 'Black Han Sans', sans-serif;
 	padding: 15px;
 	margin: 0;
 }
