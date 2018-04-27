@@ -12,6 +12,9 @@ body {
 #nav-pc {
 	text-align: center;
 	display: inline-block;
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
 	background: rgba(8,8,8,0.9);
 	width: 100%;
 	padding-bottom: 20px;
@@ -20,7 +23,7 @@ body {
 #nav-pc ul li {
 	list-style: none;
 	display: inline-block;
-	padding: 8px;
+	padding: 15px;
 }
 #nav-pc ul {
 	padding: 0px;
@@ -49,7 +52,7 @@ body {
 	display: inline-block;
 	text-align: left;
 	width: 90%;
-	background-color: rgba(0, 0, 0, 0.85);
+	background-color: rgba(0, 0, 0, 0.78);
 	margin-top: 25px;
 	margin-bottom: 25px;
 	padding-bottom: 60px;
@@ -82,6 +85,23 @@ body {
 	margin: 1%;
 }
 
+#footer {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.container1 {
+	display: inline-block;
+	text-align: right;
+	width: 100%;
+	background-color: rgba(0,0,0,0.80);
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 5px;
+}
 
 /*mobile*/
 @media (max-width: 768px){
