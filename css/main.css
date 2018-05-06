@@ -59,20 +59,9 @@ body {
 	padding-bottom: 60px;
 	padding-top: 20px;
 }
-.hero-box h2 {
-	text-align: center;
-	padding-bottom: 20px;
-}
 .hero-box {
 	margin: 0px 5%;	
 	text-align: center;
-}
-.hero-box2 {
-	height: 338px;
-	background-image: url("../images/hero-images.jpg");
-	background-size: cover;
-	margin: 1%;
-	
 }
 .col img {
 	width: 100%;
@@ -87,13 +76,6 @@ body {
 	margin: 1%;
 }
 
-#footer {
-	text-align: center;
-	display: inline-block;
-	width: 100%;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
-}
 .container1 {
 	display: inline-block;
 	text-align: right;
@@ -108,7 +90,7 @@ body {
 /*mobile*/
 @media (max-width: 768px){
 	.nav-title {
-		font-size: 35px;
+		font-size: 40px;
 	}
 	.col {
 		float: none;
