@@ -3,16 +3,15 @@ body {
 	background-image: url('../images/bg.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	color: white;
 	margin: 0px;
 	top:0;
 	font-family: sans-serif;
 	text-align: center;
-	text-decoration: none;
 }
+	a { text-decoration : none; color : aquamarine; }
 h2{
-	color: aqua;}
-
+	color: aqua;
+}
 #nav-pc {
 	text-align: center;
 	display: inline-block;
@@ -63,10 +62,11 @@ h2{
 	padding-bottom: 60px;
 	padding-top: 20px;
 }
+
 .hero-box {
 	margin: 0px 5%;	
 	text-align: center;
-	color: aqua;
+    color: aquamarine; text-decoration: none;
 }
 .col img {
 	width: 100%;
