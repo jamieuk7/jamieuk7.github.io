@@ -32,3 +32,13 @@
 	color: blue;
 	text-decoration: none;
 }
+/*mobile*/
+@media (max-width: 768px){
+	.nav-title {
+		font-size: 40px;
+	}
+	nav ul li {
+		display: block;
+		font-size: 16px;
+	}
+}
