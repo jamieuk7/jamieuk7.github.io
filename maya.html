@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Homepage // BETA</title>
+	<meta name="Viewport" content="width=device-width">
+	<link rel="stylesheet " href="css/main.css">
+	<link rel="stylesheet " href="css/animate.css">
+	<link rel="stylesheet" href="css/nav2.css">
+	<link rel="shortcut icon" href="images/ukflag.png"
+	<meta name="keywords" content="personal, projects, html, c4d, cinema 4d, templates, website">
+</head>
+					<script type="text/javascript">
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<body>
+	<nav class="navbar animated slideInDown">
+<!--
+		<div id="nav-mobile">
+			<h1 class="nav-title">change me</h1>
+			<p>change me</p>
+		</div>
+-->
+		<div id="nav-pc">
+			<h1 class="nav-title">Myself</h1>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="web.html">Web Projects</a></li>
+				<li><a href="graphics.html">Graphic Projects</a></li>
+			</ul>
+		</div>
+	</nav>
+		<nav class="navbar animated slideInDown">
+		<div id="nav-pc2">
+			<ul>
+				<li><a href="cinema4d.html">CINEMA 4D</a></li>
+				<li><a href="maya.html">MAYA</a></li>
+				<li><a href="blender.html">BLENDER</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="container animated slideInUp">
+		<div class="hero-box">
+			<h2></h2>
+			<p><b>COMING SOON!!</b>
+			</p>
+		</div>
+	</div>
+			<div class="container animated fadeIn">
+		<div class="hero-box">
+			<h2>Weekly updates</h2>
+			<p>I am just setting the page up this week!</p>
+			<p>Updated on <div id="clockbox"></div></p>
+		</div>
+	</div>
+		</body>
+</html>
