@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav');
+body {
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	margin: 0px;
+	top:0;
+	font-family: 'Yantramanav', sans-serif;
+	text-align: center;
+}
+#nav-pc {
+	text-align: center;
+	display: inline-block;
+	background-color: rgba(0,0,0,0.85);
+	width: 100%;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+#nav-pc ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 12px;
+}
+#nav-pc ul {
+	padding: 0px;
+	margin: 0px;
+	left: 0;
+	right: 0;
+}
+#nav-pc a {
+	color: white;
+	text-decoration: none;
+	transition: 1s ease;
+	font-size: 15px;
+	font-family: 'Black Han Sans', sans-serif;
+}
+#nav-pc a:hover,
+#nav-pc a:active,
+#nav-pc a:focus {
+	color: red;
+	text-decoration: none;
+}
+.nav-title {
+	font-size: 50px;
+	font-family: 'Black Han Sans', sans-serif;
+	color: white;
+	padding: 15px;
+	margin: 0;
+	text-decoration: none; 
+	
+}
+.container {
+	display: inline-block;
+	text-align: left;
+	width: 90%;
+	background-color:rgba(0,0,0,0.82);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+.hero-box h2 {
+	text-align: center;
+	padding-bottom: 20px;
+	font-family: 'Paytone One', sans-serif;
+}
+.hero-box {
+	margin: 0px 3%;	
+}
+.opening-times {
+	margin: 0px 5%;	
+	text-align: center;
+}
+.more-info {
+	margin: 0px 5%;	
+	text-align: center
+}
+.col img {
+	width: 100%;
+	height: auto;
+	display: block;
+	
+}
+
+.col{
+	width: 31.3%;
+	float: left;
+	margin: 1%;
+}
+h1{
+	color: #FF0004;
+	font-size: 100px;
+}
+/*mobile*/
+@media (max-width: 768px){
+	.nav-title {
+		font-size: 35px;
+	}
+	.col {
+		float: none;
+		width: 95%;
+		display: inline-block;
+	}
+	nav ul li {
+		display: block;
+	}
+}
