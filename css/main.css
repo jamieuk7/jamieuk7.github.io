@@ -12,36 +12,150 @@ body {
 h2{
 	color: aqua;
 }
-#nav-pc {
-	text-align: center;
-	display: inline-block;
-	background-image: url(../images/bg.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	background: rgba(255,0,4,0.70);
-	width: 100%;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+.content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 }
-#nav-pc ul li {
-	list-style: none;
-	display: inline-block;
-	padding: 15px;
+
+.content h1 {
+      color: #fff;
+      font-family: "Poppins";
+      font-weight: 200;
+      font-size: 40px;
 }
-#nav-pc ul {
-	padding: 0px;
-	margin: 0px;
-	left: 0;
-	right: 0;
+
+nav {
+      width: 100%;
+      background: rgba(27,24,24,0.88);
+      height: 70px;
+      position: static;
+      z-index: 1;
 }
-#nav-pc a {
+
+nav #brand {
+      float: left;
+      display: block;
+      margin-left: 84px;
+      font-size: 30px;
+      line-height: 70px;
+      font-weight: bold;
+}
+
+nav #brand a {
+      color: #fff;
+      transition: all 0.3s ease-out;
+      font-family: "Poppins";
+      font-weight: 300;
+}
+
+nav #menu {
+      float: left;
+      left: 50%;
+      position: relative;
+}
+
+nav #menu li {
+      display: inline-block;
+      padding: 0px 30px;
+      cursor: pointer;
+      line-height: 70px;
+      position: relative;
+      transition: all 0.3s ease-out;
+}
+
+nav #menu li a {
+      color: #fff;
+      font-family: "Poppins";
+      font-weight: 200;
+}
+
+#toggle {
+      position: absolute;
+      right: 20px;
+      top: 14px;
+      z-index: 999;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      float: right;
+      transition: all 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;
+}
+
+#toggle .span {
+      height: 3px;
+      background: #fff;
+      transition: all 0.3s ease-out;
+      backface-visibility: hidden;
+      margin: 5px auto;
+}
+
+#toggle.on #one {
+      transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+#toggle.on #two {
+      opacity: 0;
+}
+
+#toggle.on #three {
+      transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+
+#resize {
+      z-index: 1;
+      top: 0px;
+      position: absolute;
+      background: #000;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-out;
+      display: table;
+}
+
+#resize #menu {
+      height: 90px;
+      display: table-cell;
+      vertical-align: center;
+}
+
+#resize #menu li {
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+      margin-top:140px;
+}
+
+#resize #menu li a {
+      color: #fff;
+}
+
+#resize.active {
+      visibility: visible;
+      opacity: 0.99;
+}
+
+#menu a {
 	color: aqua;
 	text-decoration: none;
 	transition: 1s ease;
 }
-#nav-pc a:hover,
-#nav-pc a:active,
-#nav-pc a:focus {
+#menu a:hover,
+#menu a:active,
+#menu a:focus {
 	color: blue;
 	text-decoration: none;
 }
@@ -93,16 +207,30 @@ h2{
 }
 
 /*mobile*/
-@media (max-width: 768px){
-	.nav-title {
-		font-size: 40px;
-	}
-	.col {
-		float: none;
-		width: 95%;
-		display: inline-block;
-	}
-	nav ul li {
-		display: block;
-	}
+@media(max-width: 768px) {
+      #toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 6px;
+      }
+
+      nav #brand {
+            margin-left: 18px;
+      }
+
+      #menu a {
+            font-family: "Poppins";
+            font-weight: 200;
+            font-size: 20px;
+      }
+
+      nav #menu {
+            display: none;
+      }
+}
+
+@media(min-width: 768px) {
+      #resize {
+            visibility: hidden !important;
+      }
 }

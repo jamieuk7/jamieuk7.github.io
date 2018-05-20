@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/nav2.css">
 	<link rel="shortcut icon" href="images/ukflag.png"
 	<meta name="keywords" content="personal, projects, html, c4d, cinema 4d, templates, website">
+		<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 					<script type="text/javascript">
 tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
@@ -27,45 +28,61 @@ setInterval(GetClock,1000);
 }
 </script>
 <body>
-	<nav class="navbar animated slideInDown">
-<!--
-		<div id="nav-mobile">
-			<h1 class="nav-title">change me</h1>
-			<p>change me</p>
-		</div>
--->
-		<div id="nav-pc">
-			<h1 class="nav-title">Myself</h1>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="web.html">Web Projects</a></li>
-				<li><a href="graphics.html">Graphic Projects</a></li>
-			</ul>
-		</div>
-	</nav>
-		<nav class="navbar animated slideInDown">
-		<div id="sidenav">
-			<ul>
-				<li><a href="cinema4d.html">CINEMA 4D</a></li>
-				<li><a href="maya.html">MAYA</a></li>
-				<li><a href="blender.html">BLENDER</a></li>
-			</ul>
-		</div>
-	</nav>
+      <nav>
+
+            <ul id="menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="web.html">Web projects</a></li>
+                  <li><a href="graphics.html">Graphic Projects</a></li>
+            </ul>
+
+            <div id="toggle">
+                  <div class="span" id="one"></div>
+                  <div class="span" id="two"></div>
+                  <div class="span" id="three"></div>
+            </div>
+      </nav>
+
+      <div id="resize">
+            <ul id="menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="web.html">Web projects</a></li>
+                  <li><a href="graphics.html">Graphic Projects</a></li>
+            </ul>
+      </div>
+
+      <script>
+
+      $("#toggle").click(function() {
+
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+
+      });
+
+
+      </script>
 	
 	<div class="container animated slideInUp">
 		<div class="hero-box">
-			<h2>City</h2>
+			<h2>!!</h2>
 			<p>I have decided to split this page up into 3 a cinema 4d,maya and blender currently 
 				the blender and maya ones have no projects but will be coming soon. I will also set the web projects
 				up like this when i start learning php and js.
 			</p>
 		</div>
 	</div>
+		<div class="container animated slideInUp">
+		<div class="hero-box">
+			<h2>!!</h2>
+			<p>Need to add the child pages back onto this site will do this tonight 
+			</p>
+		</div>
+	</div>
 			<div class="container animated fadeIn">
 		<div class="hero-box">
 			<h2>Weekly updates</h2>
-			<p>I am just setting the page up this week!</p>
+			<p>New navbar!</p>
 			<p>Updated on <div id="clockbox"></div></p>
 		</div>
 	</div>
