@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	z-index: 0;
+}
+#nav-pc {
+	text-align: center;
+	display: inline-block;
+	font-family: 'Exo', sans-serif;
+	width: 100%;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+#nav-pc ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 12px;
+}
+#nav-pc ul {
+	padding: 0px;
+	margin: 0px;
+	left: 0;
+	right: 0;
+}
+#nav-pc a {
+	color: white;
+	text-decoration: none;
+	transition: 1s ease;
+	font-size: 15px;
+	font-family: 'Exo', sans-serif;
+}
+#nav-pc a:hover,
+#nav-pc a:active,
+#nav-pc a:focus {
+	color: red;
+	text-decoration: none;
+}
+.nav-title {
+	font-size: 50px;
+	font-family: 'Black Han Sans', sans-serif;
+	color: white;
+	padding: 15px;
+	margin: 0;
+	text-decoration: none; 
+	
+}
