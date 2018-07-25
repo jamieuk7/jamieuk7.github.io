@@ -1,8 +1,9 @@
-Origin: Auspicious Repo
-Label: Auspicious
+
+Origin: dragonslayer4832's Repo
+Label: dragonslayer4832
 Suite: stable
 Version: 1.0
-Codename: Auspicious
+Codename: dragonslayer4832
 Architecture: iphoneos-arm
 Components: main
-Description: Two teens that are learning :D will add are own tweaks but for a setup we will add useful ios 11.3.1 tweaks!
+Description: Tweaks I find useful :) If you want something taken down, PM me on reddit: /u/dragonslayer4832
