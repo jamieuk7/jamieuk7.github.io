@@ -1,14 +1,12 @@
-Package: com.dragonslayer4832.CrashReporter
+
+Package: com.hackyouriphone.fortnitebypass
 Section: Tweaks
-Maintainer: dragonslayer4832
+Maintainer: IAUSPICIOUS
 Architecture: iphoneos-arm
-Version: 1.15.0-1
+Version: 5.1.0
 Depends: mobilesubstrate
-Filename: debs//crash-reporter_1.15.0-1_iphoneos-arm.deb
-Size: 332612
-MD5sum: b83d34b89564b6f5d78eb9e111cee812
-SHA1: d700c1cbe20068ad331c6c42a382f031e6c6d21e
-SHA256: 2edbf86f3fe9ee9f4ebac46589e6d92dde3f31a5f3a8847521d69fbcd4b44aaf
-Description: Send useful crash info to developers
-Name: CrashReporter
-Author: Lance Fetters (ashikase) <camowilson89581@gmail.com>
+Filename: debs//fortnitebypass_5.1.0.deb
+Size: 2720
+Description: Bypass fortnite protection!
+Name: A Fortnite Bypass Protection
+Author: Akusio <unknown>
