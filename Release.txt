@@ -1,9 +1,0 @@
-
-Origin: Auspicious Repo
-Label: Auspicious
-Suite: stable
-Version: 1.0
-Codename: Auspicious
-Architecture: iphoneos-arm
-Components: main
-Description: Two teens that are learning :D will add are own tweaks but for a setup we will add useful ios 11.3.1 tweaks!

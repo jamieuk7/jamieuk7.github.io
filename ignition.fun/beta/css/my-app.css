@@ -1,0 +1,207 @@
+/* Your app custom files in this file */
+
+body {
+  color: #333;
+  font-family: -apple-system-font, BlinkMacSystemFont, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.body-standalone {
+    height: calc(100% + 20px) !important;
+    background: rgb(12,13,15);
+}
+
+.body-web {
+    background: rgb(12,13,15);
+    height: 100% !important;
+}
+
+.layout-default .navbar, .layout-default .subnavbar {
+  /*background: #7785ff;*/
+  background: rgba(119, 133, 255, 0.87);
+  /*background: rgba(255, 16, 83, 0.87);*/
+  /*background: rgba(171, 135, 255, 0.87);*/
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-image: linear-gradient(-106deg, hsla(0, 0%, 100%, 0.35) 2%, hsla(0, 0%, 100%, 0.01));
+  color: #fff;
+  border: none;
+  font-family: SF Display, -apple-system-font, BlinkMacSystemFont, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+.layout-dark .navbar, .layout-dark .subnavbar {
+  /*background: #7785ff;*/
+  background: rgba(19,19,19, 0.87);
+  /*background: rgba(255, 16, 83, 0.87);*/
+  /*background: rgba(171, 135, 255, 0.87);*/
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  /*background-image: linear-gradient(-106deg, hsla(0, 0%, 100%, 0.35) 2%, hsla(0, 0%, 100%, 0.01));*/
+  color: #fff;
+  border: none;
+  font-family: SF Display, -apple-system-font, BlinkMacSystemFont, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+.navbar:after, .toolbar:before, .subnavbar:after {
+  display: none;
+}
+
+.toolbar {
+  -webkit-box-shadow: 1px -4px 20px 1px rgba(32, 32, 32, 0.08);
+  box-shadow: 1px -4px 20px 1px rgba(32, 32, 32, 0.08);
+  -moz-box-shadow: 1px -4px 20px 1px rgba(32, 32, 32, 0.08);
+}
+
+.layout-default .page-content {
+  background: #fff;
+}
+
+/*.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 33.1%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 33.1%;
+}*/
+
+.layout-default .searchbar {
+  background: transparent !important;
+  background: rgba(119, 133, 255, 0) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+.searchbar:after {
+  background-color: transparent !important;
+}
+.layout-default .searchbar input[type="search"] {
+  background: rgba(119, 133, 255, 0.3) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  color: #FFF;
+}
+
+.layout-dark .searchbar {
+  background: transparent !important;
+  background: rgba(19,19,19, 0) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+.layout-dark .searchbar input[type="search"] {
+  background: rgba(19,19,19, 0.3) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  color: #FFF;
+}
+
+*::-webkit-input-placeholder {
+  color: #EEEFF6 !important;
+}
+*:-moz-placeholder {
+  color: #EEEFF6 !important;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: #EEEFF6 !important;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: #EEEFF6 !important;
+}
+*::-ms-input-placeholder {
+  color: #EEEFF6 !important;
+}
+*::placeholder {
+  color: #EEEFF6 !important;
+}
+
+.body-standalone .page-content {
+  padding-top: 104px !important;
+}
+
+.list-block .item-inner:after {
+  display: none;
+}
+
+.list-block ul:before, .list-block ul:after {
+  display: none;
+}
+
+.button.button-big.button-fill.button-quick {
+  background: #4acdff;
+  background-image: linear-gradient(-106deg, hsla(0, 0%, 100%, 0.15) 2%, hsla(0, 0%, 100%, 0));
+  border: none;
+}
+
+.layout-default .content-block-title {
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: none;
+  color: #333;
+}
+
+.layout-dark .content-block-title {
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: none;
+  color: #efefef;
+}
+
+.layout-default .item-title {
+  color: #333 !important;
+}
+
+.layout-dark .item-title {
+  color: #efefef !important;
+}
+
+div[class*="col-"] {
+  text-align: center;
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+div[class*="col-"].left {
+  /*padding-right: 5px;*/
+}
+
+div[class*="col-"].right {
+  /*padding-left: 5px;*/
+}
+
+.row {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}   
+
+/* Tab bar icons */
+i.dashboard {
+  width: 30px;
+  height: 30px;
+  background-image: url("icons/dashboard.png");
+}
+.active i.dashboard {
+  background-image: url("icons/dashboard-active.png");
+}
+i.apps {
+  width: 30px;
+  height: 30px;
+  background-image: url("icons/apps.png");
+}
+.active i.apps {
+  background-image: url("icons/apps-active.png");
+}
+i.settings {
+  width: 30px;
+  height: 30px;
+  background-image: url("icons/settings.png");
+}
+.active i.settings {
+  background-image: url("icons/settings-active.png");
+}
