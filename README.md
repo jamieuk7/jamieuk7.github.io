@@ -1,3 +1,2 @@
-# iAuspicious
-An open-source Cydia repository.
+SSUP
 
