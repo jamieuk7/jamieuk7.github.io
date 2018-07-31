@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.ipas.fun	TRUE	/	FALSE	1999999999	__cfduid	d7f262ecd7c475ee08ededbc73f323d4b1532803179
-.ignition.fun	TRUE	/	FALSE	1999999999	__cfduid	df127359078d4ea09a7a22423fce362ed1532803182
-
