@@ -39,7 +39,6 @@ body, html{
 
 .section-light{
   background-color:#f4f4f4;
-  color:#666;
 }
 
 .section-dark{
@@ -71,3 +70,15 @@ body, html{
     background-attachment:scroll;
   }
 }
+.btn-default,
+.btn-default:focus {
+    background: #21343e;
+    border: 0;
+    color: white;
+    padding: 10px 25px;
+    transition: 1s ease;
+}
+.btn-default:hover,
+.btn-default:active {
+    background: #4f595f !important;
+    color: #00f8cf !important;
