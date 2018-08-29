@@ -1,0 +1,38 @@
+.jumbotron {
+  background-color: #fff;
+  /* box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15); */
+  border-radius: 9px;
+  overflow: hidden;
+}
+.jumbotron img {
+  max-width: 192px;
+  margin-top: -100px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a.btn {
+  border-radius: 100px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+a.btn ion-icon {
+  margin-top: 8px;
+}
+
+div.profile_header {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin:0px;
+  margin-top:-64px;
+  background-image: url(../images/banner2.jpg);
+}
+
+div.card {
+  margin-bottom: 16px;
+}
