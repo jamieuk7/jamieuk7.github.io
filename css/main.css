@@ -1,5 +1,7 @@
+
+
 body {
-    background: #2c2323; 
+    background: #383F43;
     color: white;
     font-family: sans-serif;
     text-align: center;
@@ -25,23 +27,27 @@ body {
 .btn-default:hover,
 .btn-default:active {
     background: #4f595f !important;
-    color: white !important;
+    color: #4F595F !important;
 }
 #anim1 {
     margin-top: 10px;
     animation: 1s textFx ease;
 }
-#rocket {
-    animation: 1s rocketFx ease;
+#Atomic {
+    animation: 3s rocketFx ease;
 }
 @keyframes rocketFx {
     0% {
         opacity: 0;
         transform: scale3d(0.3, 0.3, 0.3) rotate(-20deg);
     }
-    65% {
+    35% {
         opacity: 1;
-        transform: scale3d(1.05, 1.05, 1.05) rotate(5deg);
+        transform: scale3d(0.6, 0.6, 0.6) rotate(0deg);
+    }
+    65% {
+        opacity: 2;
+        transform: scale3d(0.9, 0.9, 0.9) rotate(15deg);
     }
     100% {
         transform: rotate(0deg);
